@@ -21,7 +21,8 @@ while True:
         annotated_frame = r.plot() 
         cv2.imshow('Webcam', annotated_frame)
 
-    if cv2.waitKey(1) == ord('q'):
+    x = cv2.waitKey(1)
+    if x == ord('q') or x == ord('Q'):
         break
 
 cap.release()
