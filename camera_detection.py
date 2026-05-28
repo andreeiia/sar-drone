@@ -7,7 +7,8 @@ model = YOLO("yolo26n.pt")
 # Perform object detection on an image on class 0 (person)
 # results = model("https://ultralytics.com/images/bus.jpg", classes = 0)
 
-# Perform object detection on a video stream on class 0 (person)
+### Perform object detection on a video stream on class 0 (person)
+## end by pressing q
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
@@ -25,5 +26,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-
-# end video stream
+## end video stream
